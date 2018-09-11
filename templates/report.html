@@ -1,0 +1,362 @@
+<style type="text/css">
+.reg {
+	/*  padding: 0 0 0 20%; */
+	/*   margin-left: 25%;
+      overflow-y: scroll;
+      overflow-x: scroll; */
+
+}
+
+ul.nav-tabs {
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 4px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+	border: 1px solid #61CBD8;
+}
+
+ul.nav-tabs li {
+	margin: 0;
+	border-top: 1px solid #61CBD8;
+}
+
+ul.nav-tabs li:first-child {
+	border-top: none;
+}
+
+ul.nav-tabs li a {
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 0;
+	text-decoration: none;
+	color: #1191DF;
+}
+
+ul.nav-tabs li a.hover {
+	background-color: red;
+}
+
+ul.nav-tabs li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
+
+/*  ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }*/
+.col-xs-3 {
+	width: 168px;
+	/* float: left; */
+	/* position:relative; */
+	left: 20%;
+	font-family: 'Microsoft Yahei';
+	/*  margin-right: -15px;
+    margin-left: -15px; */
+	line-height: 21px;
+	font-size: 12px;
+}
+
+#myScrollspy {
+	position: fixed;
+	/* top: 26%; */
+	top: 160px;
+	left: 1%;
+	/* width: 13%; */
+	width: 180px;
+}
+
+.backToTop {
+	width: 66px;
+	height: 23px;
+	display: block;
+	position: fixed;
+	left: 5%;
+	/* margin-left: 490px; */
+	bottom: 10%;
+	/* z-index: 10000; */
+	font-family: 'Microsoft Yahei';
+	font-size: 16px;
+	color: #11AAEE;
+	text-decoration: none;
+	border-width: 1;
+	border-color: #11AAEE;
+	border-style: solid;
+	/* border-width: thin; */
+}
+</style>
+<div id="content" class="reg">
+
+	<div
+		style="font-size: 12px; line-height: 20px; font-family: 'Microsoft Yahei'; width: 800px; padding-left: 190px;">
+
+		<div class="col-xs-3" id="myScrollspy">
+			<h4
+				style="font-size: 13px; color: #1191DF; font-family: 'Microsoft Yahei';">每周数据库统计报告</h4>
+			<ul class="nav-tabs">
+				<li>&nbsp;<a href="#section-1" title
+					style="text-decoration: none; z-index: 9999;" target='_self'>schema概况</a></li>
+				<li>&nbsp;<a href="#section-2" title
+					style="text-decoration: none; z-index: 9999;" target='_self'>大表TOP10</a></li>
+				<li>&nbsp;<a href="#section-3" title
+					style="text-decoration: none; z-index: 9999;" target='_self'>非InnoDB表</a></li>
+			</ul>
+		</div>
+
+		<div
+			style="width: 100%; /*  margin: 0px auto; */ margin-left: 10%; background: #61CBD8; border-top-right-radius: 8px; border-top-left-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px;">
+
+			<div style="height: 10px; width: 100%;">&nbsp;</div>
+
+			<div
+				style="width: 100%; background: #1191DF; height: 55px; padding: 10px 0 0 0px;">
+				<li
+					style="color: #FFFFFF; font-size: 24px; margin: 0; font-family: 'Microsoft Yahei'; padding-left: 30px;">
+					每周数据库统计报告
+				</li>
+			</div>
+			</a>
+
+			<div
+				style="padding: 5px 9px; background: #f9f9f9; border: 1px solid #61CBD8">
+
+				<div style="padding: 0px 15px 0px 15px; margin: 10px 0px 0px 0px;">
+
+					<div style="">
+
+						<div style="margin: 20px 0px 0px 0px;">
+							<div
+								style="text-indent: 16px; font-size: 14px; margin: 0px 2px 0px 0px; padding: 0; width: 210px; height: 30px; border-radius: 20px; -moz-border-radius: 20px; -khtml-border-radius: 20px; -webkit-border-radius: 20px; border: 1px solid #DEEBFB; border-left: 15px solid #DEEBFB;">
+								<p style="color: #333; margin: 3px 0;">
+									<a name="section-3"><li id="section-1">schema概况</li> <a>
+								</p>
+							</div>
+							<div style="">
+								<table frame="box" rules="none" bordercolor="#c7c7c7"
+									style="text-align: left; margin: 2px 0px 0px; width: 100%; border-collapse: collapse;">
+									<tbody>
+										<tr
+											style="background-color: rgb(17, 170, 238); display: table-row; vertical-align: inherit; border-color: inherit;">
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												IP
+
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												库名
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												表数量
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												数据大小
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												索引大小
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												总大小
+											</td>
+										</tr>
+										{% if rec[ 'schema' ] != {}: %}
+										     {% for ip,info in rec['schema'].items(): %}
+                                                    {% set host =  ip %}
+                                                    {% if info != {} %}
+                                                         {% for k,v in info.items(): %}
+                                                                {% set schema =  k %}
+                                                                {% set data = v.split('|')[0] %}
+                                                                {% set index = v.split('|')[1] %}
+                                                                {% set table_count = v.split('|')[2] %}
+                                                                {% set total = v.split('|')[3] %}
+										<tr
+											style="display: table-row; vertical-align: inherit; border-color: inherit;">
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(38, 38, 38); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ host }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(38, 38, 38); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ schema }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(38, 38, 38); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ table_count }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(38, 38, 38); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ data }}G</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(38, 38, 38); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ index }}G</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(38, 38, 38); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ total }}G</td>
+										</tr>
+										                  {%endfor%}
+										            {%endif%}
+										     {%endfor%}
+									   {% endif %}
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div style="margin: 20px 0px 0px 0px;">
+							<div
+								style="text-indent: 14px; font-size: 14px; margin: 0px 2px 0px 0px; padding: 0; width: 200px; height: 30px; border-radius: 20px; -moz-border-radius: 20px; -khtml-border-radius: 20px; -webkit-border-radius: 20px; border: 1px solid #DEEBFB; border-left: 15px solid #DEEBFB;">
+								<p style="color: #333; margin: 3px 0;">
+									<a name="section-2"><li id="section-4">大表TOP10</li>
+									<a>
+								</p>
+							</div>
+							<div style="">
+								<table frame="box" rules="none" bordercolor="#c7c7c7"
+									style="text-align: left; margin: 2px 0px 0px; width: 100%; border-collapse: collapse;">
+									<tbody>
+										<tr
+											style="background-color: rgb(17, 170, 238); display: table-row; vertical-align: inherit; border-color: inherit;">
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												IP
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												库名
+
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												表名
+
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												数据大小
+											</td>
+										    <td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												索引大小
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												总大小
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												记录数
+											</td>
+										</tr>
+									    {% if rec['top10'] != {}: %}
+									         {% for info in rec['top10']: %}
+									                {% set host =  info[0].split('|')[0] %}
+									                {% set schema = info[0].split('|')[1] %}
+									                {% set table = info[0].split('|')[2] %}
+									                {% set data_size = info[1] %}
+									                {% set rows = info[2] %}
+									                {% set index_size = info[3] %}
+									                {% set total = info[4] %}
+										<tr
+											style="display: table-row; vertical-align: inherit; border-color: inherit;">
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ host }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ schema }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ table }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ data_size }}G</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ index_size }}G</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ total }}G</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ rows }}万</td>
+										</tr>
+										      {%endfor%}
+										{% endif %}
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div style="margin: 20px 0px 0px 0px;">
+							<div
+								style="text-indent: 14px; font-size: 14px; margin: 0px 2px 0px 0px; padding: 0; width: 200px; height: 30px; border-radius: 20px; -moz-border-radius: 20px; -khtml-border-radius: 20px; -webkit-border-radius: 20px; border: 1px solid #DEEBFB; border-left: 15px solid #DEEBFB;">
+								<p style="color: #333; margin: 3px 0;">
+									<a name="section-5"><li id="section-3">非InnoDB表</li> <a>
+								</p>
+							</div>
+							<div style="">
+								<table frame="box" rules="none" bordercolor="#c7c7c7"
+									style="text-align: left; margin: 2px 0px 0px; width: 100%; border-collapse: collapse;">
+									<tbody>
+										<tr
+											style="background-color: rgb(17, 170, 238); display: table-row; vertical-align: inherit; border-color: inherit;">
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												IP
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												库名
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												表名
+											</td>
+											<td colspan="1"
+												style="width: 150px; height: 30px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												存储引擎
+											</td>
+										</tr>
+										{% if rec['top10'] != {}: %}
+									         {% for ip,info in rec['notInnodb'].items(): %}
+									                {% set host =  ip %}
+									                {% if info != {} %}
+									                     {% for k,v in info.items(): %}
+									                            {% set schema = k.split('.')[0] %}
+									                            {% set table = k.split('.')[1] %}
+									                            {% set engine = v %}
+										<tr
+											style="display: table-row; vertical-align: inherit; border-color: inherit;">
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ host }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ schema }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ table }}</td>
+											<td colspan="1"
+												style="width: 150px; padding: 7px 15px 7px 7px; margin: 0px; font-size: 13px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(241, 241, 226); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(222, 222, 222); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(222, 222, 222); text-align: center;">
+												{{ engine }}</td>
+										</tr>
+										                 {%endfor%}
+										             {%endif%}
+										      {%endfor%}
+										{% endif %}
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<tr></tr>
+				</div>
+				<td align="left"
+					style="color: #000000; font-size: 11px; font-family: Arial, Helvetica, sans-serif;"
+					valign="middle"><img style="display: block; width: 100%;"
+					src="https://improxy.benchmarkemail.com/http://www.benchmarkemail.com/images/templates_n/industry/trainer/images/footer.gif"
+					alt="" border="0" />&nbsp;</td>
+				</tr>
+			</div>
+		</div>
+	</div>
+	&nbsp;
+</div>
