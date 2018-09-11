@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'root', #连接用户名
         'PASSWORD': '123456',#连接密码
         'HOST': '10.100.2.246',
-        'PORT': '3306'
+        'PORT': '3307'
     }
 }
 
